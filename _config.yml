@@ -5,7 +5,7 @@
 # Site
 title: OxygenMode
 nav_brand: OxygenMode
-subtitle: "|  欢迎开启氧模式  ·  一位冒牌技术员的个人博客  |"
+subtitle: "欢迎开启氧模式  ·  一位冒牌技术员的个人博客"
 author: AmVoid
 language: "zh-CN"
 timezone:
@@ -55,7 +55,7 @@ anchorjs: true                          # if you want to customize anchor. check
 
 # Analytics settings
 # Baidu Analytics
-#ba_track_id: 4cc1f2d8f3067386cc5cdb626a202900
+ba_track_id: f42837ef82147164abeb122e5ac5082f
 # Google Analytics
 ga_track_id: 'UA-97117497-1'          # Format: UA-xxxxxx-xx
 ga_domain: https://amvoidhub.github.io/
@@ -71,7 +71,7 @@ widgets:
 - recent-posts
 # - archive
 # - category
-# - friends-blog
+- friends-blog
 
 # widget behavior
 ## Archive
@@ -87,17 +87,8 @@ featured-condition-size: 3              # A tag will be featured if the size of 
 ## Friends
 friends: [
     {
-        title: "Bean Tech",
-        href: "http://beantech.org"
-    },{
-        title: "Kaijun's Blog",
-        href: "http://blog.kaijun.rocks"
-    },{
-        title: "Hux Blog",
-        href: "http://huangxuan.me"
-    },{
-        title: "It Helps SEO",
-        href: "#"
+        title: "Efly Studio",
+        href: "http://efly.nenu.edu.cn"
     }
 ]
 
