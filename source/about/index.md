@@ -10,4 +10,10 @@ comments: false
 
 > 这些残暴的欢愉，终将以残暴结局 &emsp;&emsp; ——莎士比亚
 
+<br>
+不如来点背景音乐？♬
+<audio src="/music/Exit Music (For a Film).mp3" controls="controls">
+    哭泣 :-( ，你的垃圾浏览器不支持音频播放。
+</audio>
+
 点击下载：<a href="/files/about_me.txt" download="关于我">关于我</a>（试验用）
