@@ -1,15 +1,13 @@
 ---
-layout: layout
+layout: page
 ---
 <!-- Main Content -->
-<div class="container">
-    <div class="row">
-        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+
             <!-- 标签云 -->
             <div id='tag_cloud' class="tags">
                 <% site.tags.map(function(tag){  %>
                     <a href="#<%= tag.name %>" title="<%= tag.name %>" rel="<%= tag.length %>"
-                        style="background-color:skyblue"
+                        style="background-color:skyblue;color:whitesmoke"
                     ><%= tag.name %></a>
                 <% }) %>
             </div>
@@ -39,12 +37,6 @@ layout: layout
                     </a>
                     <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
                 </div>
-                <hr>
                 <% }) %>
             </div>
             <% }) %>
-
-
-        </div>
-    </div>
-</div>

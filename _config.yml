@@ -32,13 +32,13 @@ signature-img:
 # SNS settings
 # RSS: false
 jianshu_username:   00a615eea12f
-weibo_username:     amovia
-zhihu_username:     amovia
 github_username:    amvoidhub
-twitter_username:   maohengyu
-facebook_username:  amvoidbook
+weibo_username:     amovia
 linkedin_username:  amvoidin
-steam_username:     "76561198317707147"
+# zhihu_username:     amovia
+# twitter_username:   maohengyu
+# facebook_username:  amvoidbook
+# steam_username:     "76561198317707147"
 
 # Build settings
 anchorjs: true                          # if you want to customize anchor. check out line:181 of `post.html`
