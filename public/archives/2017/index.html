@@ -40,7 +40,7 @@
     <!-- Custom Fonts -->
     <!-- <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"> -->
     <!-- Hux change font-awesome CDN to qiniu -->
-    <link href="https://cdn.staticfile.org/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
 
     <!-- Hux Delete, sad but pending in China
@@ -132,6 +132,13 @@
 
                         
                         <li>
+                            <a href="/about/">关于·About</a>
+                        </li>
+                        
+                    
+
+                        
+                        <li>
                             <a href="/tags/">标签·Tags</a>
                         </li>
                         
@@ -140,13 +147,6 @@
                         
                         <li>
                             <a href="/archive/">归档·Archives</a>
-                        </li>
-                        
-                    
-
-                        
-                        <li>
-                            <a href="/about/">关于·About</a>
                         </li>
                         
                     
@@ -217,6 +217,24 @@
                     <span class="tag-text">2017</span>
                 </span>
                 <ul style="margin-bottom:0px">
+                
+                  <!-- <li class="listing-item">
+                  <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
+                  <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+                  </li> -->
+                 <li >
+                    05-01
+                    <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+                    <a href="/articles/2017/05/01/travel-in-Changbai/" style="color: #0085a1">
+                        <span style="font-size:18px">
+                            长白常白长白山  &nbsp | &nbsp
+                        </span>
+                        <span style="font-size:14px;font-style:italic">
+                            总觉得在东北上学这么久，不来一次长白山的话，那实在是太遗憾了。
+                        </span>
+                    </a>
+                    <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
+                </li>
                 
                   <!-- <li class="listing-item">
                   <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
@@ -333,6 +351,10 @@
   <h5>RECENT POSTS</h3>
   <div class="widget">
     <ul>
+      
+        <li>
+          <a href="/articles/2017/05/01/travel-in-Changbai/">长白常白长白山</a>
+        </li>
       
         <li>
           <a href="/articles/2017/04/17/oxygenmode-start/">正在开启氧模式</a>
