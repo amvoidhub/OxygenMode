@@ -42,15 +42,15 @@ header-img: "img/header_img/about_bg.png"
 
 #### <i class="fa fa-graduation-cap" aria-hidden="true"></i> &nbsp;教育经历
 
-&emsp;&emsp;**东北师范大学 | NENU <span style="float:right;">2014.09 — 2018.06</span>**
-&emsp;&emsp;&emsp;<i class="fa fa-book" aria-hidden="true"></i> &nbsp;*心理学 &nbsp; Psychology* 
+&emsp;&emsp;**东北师范大学** *<span style="float:right;">2014.09 - 2018.06</span>*
+&emsp;&emsp;&emsp;<i class="fa fa-book" aria-hidden="true"></i> &nbsp;专业：心理学(Psychology) 
 
 ----------
 
 #### <i class="fa fa-briefcase" aria-hidden="true"></i> &nbsp;工作经历
 
-&emsp;&emsp;**易翔工作室 | Efly Studio <span style="float:right;">2014.10 — 至今</span>**
-&emsp;&emsp;&emsp; <i class="fa fa-id-card-o" aria-hidden="true"></i> &nbsp;*部门：程序组(web前端开发)*
+&emsp;&emsp;**易翔工作室** *<span style="float:right;">2014.10 - 2017.09</span>*
+&emsp;&emsp;&emsp; <i class="fa fa-id-card-o" aria-hidden="true"></i> &nbsp;部门：程序组(web前端开发) 
 
 ----------
 

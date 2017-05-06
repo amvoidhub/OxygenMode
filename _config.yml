@@ -35,10 +35,10 @@ jianshu_username:   00a615eea12f
 github_username:    amvoidhub
 weibo_username:     amovia
 linkedin_username:  amvoidin
-# zhihu_username:     amovia
+zhihu_username:     amovia
 # twitter_username:   maohengyu
 # facebook_username:  amvoidbook
-# steam_username:     "76561198317707147"
+steam_username:     "76561198317707147"
 
 # Build settings
 anchorjs: true                          # if you want to customize anchor. check out line:181 of `post.html`
