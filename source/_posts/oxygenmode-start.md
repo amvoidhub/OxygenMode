@@ -4,7 +4,7 @@ tab: 正在开启氧模式
 catalog: true
 date: 2017-04-17 14:46:31
 subtitle: 现在正是午后，窗外下着雷雨，四月的长春依旧还没多少春天的温柔。
-header-img: Demo.png
+header-img: img/Demo.png
 tags:
 - 瞎写
 categories:

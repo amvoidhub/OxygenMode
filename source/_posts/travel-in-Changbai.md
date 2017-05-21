@@ -4,7 +4,7 @@ tab: 长白常白长白山
 catalog: true
 date: 2017-05-01 22:28:13
 subtitle: 总觉得在东北上学这么久，不来一次长白山的话，那实在是太遗憾了。
-header-img: Demon.jpg
+header-img: img/Demon.jpg
 tags:
 - 游记
 categories:
@@ -44,7 +44,7 @@ categories:
 
 ![漂流](img/img1.jpg)
 
-&emsp;&emsp;体验还是很不错的，外加身上套了劣质防水塑料布，也没有搞得一身湿，出了屁股~，水流有缓有疾，只是沿途风光一般，河岸还处于开发阶段。
+&emsp;&emsp;体验还是很不错的，外加身上套了劣质防水塑料布，也没有搞得一身湿，除了屁股~，水流有缓有疾，只是沿途风光一般，河岸还处于开发阶段。
 
 ---
 
