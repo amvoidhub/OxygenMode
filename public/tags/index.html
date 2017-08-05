@@ -217,7 +217,7 @@
                         style="background-color:skyblue;color:whitesmoke"
                     >游记</a>
                 
-                    <a href="#闲读" title="闲读" rel="1"
+                    <a href="#闲读" title="闲读" rel="2"
                         style="background-color:skyblue;color:whitesmoke"
                     >闲读</a>
                 
@@ -282,6 +282,24 @@
                 <span class="fa fa-tag listing-seperator" id="闲读">
                     <span class="tag-text">闲读</span>
                 </span>
+                
+                  <!-- <li class="listing-item">
+                  <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
+                  <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+                  </li> -->
+                 <div class="post-preview">
+                     <a href="/articles/2017/05/29/readbook-vol-1-1/">
+                        <h2 class="post-title">
+                            《计算机与人脑》--读书笔记vol.1.1
+                        </h2>
+                        
+                            <h3 class="post-subtitle">
+                                自动机，也就是会自己动的机，在那个时代可以说是非常神奇的东西了。
+                            </h3>
+                        
+                    </a>
+                    <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
+                </div>
                 
                   <!-- <li class="listing-item">
                   <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
@@ -426,6 +444,10 @@
   <h5>RECENT POSTS</h3>
   <div class="widget">
     <ul>
+      
+        <li>
+          <a href="/articles/2017/05/29/readbook-vol-1-1/">《计算机与人脑》--读书笔记vol.1.1</a>
+        </li>
       
         <li>
           <a href="/articles/2017/05/16/readbook-vol-1-0/">《计算机与人脑》--读书笔记vol.1.0</a>

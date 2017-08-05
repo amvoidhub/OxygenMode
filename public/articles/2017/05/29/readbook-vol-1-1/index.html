@@ -14,11 +14,11 @@
     <script async defer src="https://buttons.github.io/buttons.js"></script>
     <title>
         
-          归档 - O2 | 氧模式
+          《计算机与人脑》--读书笔记vol.1.1 - O2 | 氧模式
         
     </title>
 
-    <link rel="canonical" href="https://amvoidhub.gihub.io/archive/">
+    <link rel="canonical" href="https://amvoidhub.gihub.io/articles/2017/05/29/readbook-vol-1-1/">
 
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="/css/bootstrap.min.css">
@@ -69,8 +69,8 @@
 <style type="text/css">
     header.intro-header{
         
-            background-image: url('/img/header_img/archive_bg.png')
-            /*page*/
+            background-image: url('img/Demon.jpg')
+            /*post*/
         
     }
     
@@ -83,10 +83,18 @@
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                 
-                    <div class="site-heading">
-                        <h1>归档·Archives</h1>
-                        <!--<hr class="small">-->
-                        <span class="subheading">因为没有方便的搜索功能 :-( ，所以麻烦自己去找啦，或者到隔壁找标签</span>
+                    <div class="post-heading">
+                        <div class="tags">
+                            
+                              <a class="tag" href="/tags/#闲读" title="闲读">闲读</a>
+                            
+                        </div>
+                        <h1>《计算机与人脑》--读书笔记vol.1.1</h1>
+                        <h2 class="subheading">自动机，也就是会自己动的机，在那个时代可以说是非常神奇的东西了。</h2>
+                        <span class="meta">
+                            Posted by AmVoid on
+                            2017-05-29
+                        </span>
                     </div>
                 
 
@@ -189,272 +197,155 @@
 
 
     <!-- Main Content -->
-    <!-- Main Content -->
-<div class="container">
-    <div class="row">
-        
+    <!-- Modify by Yu-Hsuan Yen -->
 
-<!-- USE SIDEBAR -->
-    <!-- Post Container -->
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+
+            <!-- Post Container -->
             <div class="
-                col-lg-8 col-lg-offset-1
-                col-md-8 col-md-offset-1
-                col-sm-12
-                col-xs-12
-                post-container
-            ">
-            
-                
-<!-- Main Content -->
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                post-container">
 
-            
+                <h2 id="在读这本书之前">在读这本书之前</h2>
+<p>  冯·诺依曼之前的研究加上本书内容所阐述的一些理论与构想，形成了计算机科学的一个核心领域——自动机理论。在此书问世之前，冯·诺依曼在希克松（Hixon）会议上作了题为《<em>自动机的一般逻辑理论</em>》的报告。所以在此书一开始便涉及到“<strong>自动机</strong>（Automata）”这个概念，对于初读者而言可能会带来相当的困惑。</p>
+<hr>
+<h2 id="自动机理论">自动机理论</h2>
+<blockquote>
+<p>如果有人能够讲出关于这种自动机的“理论”，那我就非常满意了。遗憾的是，到目前为止我们所具有的——我必须这让呼吁——仍然只能说还不完全性出的、难于条理化的那样“一批经验”。 ——摘自《计算机与人脑》</p>
+</blockquote>
+<p>  按照目前的定义说法，自动机理论是一种将离散数学系统的构造，作用和关系作为研究对象的数学理论，估计这个定义中，冯·诺依曼作为数学家的身份背景起到了重要作用。在<strong>理论计算机科学</strong>，自动机理论是对<strong>抽象机</strong>（或者叫做抽象电脑，abstract machine/abstract computer）和他们能解决的问题的研究。这个说法正是直接指向了电脑的理论模型。</p>
+<p>  自动机，当然并不是所谓的“会自己动的机”，实际上它是<strong>有限状态机</strong>（FSM）的数学模型。于是我们的话题似乎又牵扯到一个我们并不熟悉的概念。</p>
+<h3 id="有限状态机">有限状态机</h3>
+<p>  <strong>有限状态机</strong>（finite-state machin/FSM）又称有限状态自动机,简称<strong>状态机</strong>,是表示有限个状态以及在这些状态之间的转移和动作等行为的数学模型。</p>
+<p><img src="img/img1.png" alt="有限状态机"></p>
+<p>  有限状态机的逻辑模型，我们可以看做是一种状态和状态之间的联系，当前的状态和输入，会决定下一个状态和输出。这也是一般程序员最为熟悉的程序逻辑。</p>
+<p>  自动机理论又和<strong>形式语言理论</strong>有着密切的关联，特定的自动机是按照他们所能识别的形式语言来分类。形式语言理论只针对语言的语法，通过数学方法研究。这就是为什么现在我们可以看到，不同的编程语言可以表达相同的语义，却有着不同的语法结构。</p>
+<hr>
+<h2 id="两类计算机">两类计算机</h2>
+<p>  写到这里，接下来就是说一说最具有典型意义的自动机——大型的电子计算机。</p>
+<blockquote>
+<p>现有的计算机，可以分为两大类：“模拟”计算机和“数字”计算机。这种分类，是根据计算机星星运算中表示数目的方法而决定的。 ——摘自《计算机与人脑》</p>
+</blockquote>
+<h3 id="模拟计算机">“模拟”计算机</h3>
+<p>  模拟计算机，就是用电流、电压等连续变化的物理量直接进行运算的计算机，基于<strong>模拟信号</strong>原则,使用电路构建起来。模拟计算机中每一个数，都是用一个适当的物理量来表示，比如圆盘的旋转角度、电流强度、电压大小等等这些物理量。</p>
+<p>  模拟计算机的特性，决定了模拟计算机中，数值总是由连续量来表示，运算过程也是连续的。因此，模拟计算机的精度并不那么好，并且抗外界干扰能力极差。</p>
+<h3 id="数字计算机">“数字”计算机</h3>
+<p>  与模拟计算机不同，数字计算机并不依赖于连续变化的物理量来进行计算，而是通过符号和符号的组合来表达一个值，进而进行计算。这些符号通常是电脉冲，由电闸装置控制，通过电脉冲的存在或不存在来传送信息，也就是符号的“值”。这样，就产生了我们熟悉的二进制。</p>
+<p>  当然，相比于模拟计算机，基于其“离散”的特点，数字计算机具有更多的优势，比如更加精确（毕竟在两个符号之间不可能找到第三个符号），抗干扰能力强。</p>
 
-             <!-- 归档列表 -->
+                
 
-            
-            <div class="one-tag-list" style="margin-top:30px">
-                <span class="fa fa-calendar-times-o listing-seperator" id="2017">
-                    <span class="tag-text">2017</span>
-                </span>
-                <ul style="margin-bottom:0px">
-                
-                  <!-- <li class="listing-item">
-                  <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
-                  <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-                  </li> -->
-                 <li >
-                    05-29
-                    <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-                    <a href="/articles/2017/05/29/readbook-vol-1-1/" style="color: #0085a1">
-                        <span style="font-size:18px">
-                            《计算机与人脑》--读书笔记vol.1.1  &nbsp | &nbsp
-                        </span>
-                        <span style="font-size:14px;font-style:italic">
-                            自动机，也就是会自己动的机，在那个时代可以说是非常神奇的东西了。
-                        </span>
-                    </a>
-                    <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
-                </li>
-                
-                  <!-- <li class="listing-item">
-                  <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
-                  <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-                  </li> -->
-                 <li >
-                    05-16
-                    <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-                    <a href="/articles/2017/05/16/readbook-vol-1-0/" style="color: #0085a1">
-                        <span style="font-size:18px">
-                            《计算机与人脑》--读书笔记vol.1.0  &nbsp | &nbsp
-                        </span>
-                        <span style="font-size:14px;font-style:italic">
-                            第三次读这本书，决定写个读书笔记，本期姑且算是序言。
-                        </span>
-                    </a>
-                    <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
-                </li>
-                
-                  <!-- <li class="listing-item">
-                  <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
-                  <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-                  </li> -->
-                 <li >
-                    05-01
-                    <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-                    <a href="/articles/2017/05/01/travel-in-Changbai/" style="color: #0085a1">
-                        <span style="font-size:18px">
-                            长白常白长白山  &nbsp | &nbsp
-                        </span>
-                        <span style="font-size:14px;font-style:italic">
-                            总觉得在东北上学这么久，不来一次长白山的话，那实在是太遗憾了。
-                        </span>
-                    </a>
-                    <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
-                </li>
-                
-                  <!-- <li class="listing-item">
-                  <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
-                  <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-                  </li> -->
-                 <li >
-                    04-17
-                    <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-                    <a href="/articles/2017/04/17/oxygenmode-start/" style="color: #0085a1">
-                        <span style="font-size:18px">
-                            正在开启氧模式  &nbsp | &nbsp
-                        </span>
-                        <span style="font-size:14px;font-style:italic">
-                            现在正是午后，窗外下着雷雨，四月的长春依旧还没多少春天的温柔。
-                        </span>
-                    </a>
-                    <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
-                </li>
-                
+                <hr>
+                <!-- Pager -->
+                <ul class="pager">
+                    
+                        <li class="previous">
+                            <a href="/articles/2017/05/16/readbook-vol-1-0/" data-toggle="tooltip" data-placement="top" title="《计算机与人脑》--读书笔记vol.1.0">&larr; Previous Post</a>
+                        </li>
+                    
+                    
                 </ul>
-            </div>
-            <hr>
-            
 
-                <!-- 如果开启评论功能 -->
+                <!-- duoshuo Share start -->
                 
-                    <!--<hr>-->
+                <!-- 多说 Share end-->
 
-                    
-
-                    
-
-
-                    
-
-                    
+                <!-- 多说评论框 start -->
                 
+                <!-- 多说评论框 end -->
+
+                <!-- disqus comment start -->
+                
+                <!-- disqus comment end -->
             </div>
+            
+            <!-- Tabe of Content -->
+            <!-- Table of Contents -->
 
-          <!-- Sidebar Container -->
-<div class="
-    col-lg-3 col-lg-offset-0
-    col-md-3 col-md-offset-0
-    col-sm-12
-    col-xs-12
-    sidebar-container
-">
     
-        <!-- Short About -->
-<section class="visible-md visible-lg">
-    <h5><a href="/about/">ABOUT ME</a></h5>
-    <div class="short-about">
-
+      <aside id="sidebar">
+        <div id="toc" class="toc-article">
+        <strong class="toc-title">Contents</strong>
         
-            <img id = "avatar_pic" src="/img/me.jpg" />
+          <ol class="toc-nav"><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#在读这本书之前"><span class="toc-nav-number">1.</span> <span class="toc-nav-text">在读这本书之前</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#自动机理论"><span class="toc-nav-number">2.</span> <span class="toc-nav-text">自动机理论</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#有限状态机"><span class="toc-nav-number">2.1.</span> <span class="toc-nav-text">有限状态机</span></a></li></ol></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#两类计算机"><span class="toc-nav-number">3.</span> <span class="toc-nav-text">两类计算机</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#模拟计算机"><span class="toc-nav-number">3.1.</span> <span class="toc-nav-text">“模拟”计算机</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#数字计算机"><span class="toc-nav-number">3.2.</span> <span class="toc-nav-text">“数字”计算机</span></a></li></ol></li></ol>
         
+        </div>
+      </aside>
+    
 
-        
-            <p>毛斯特珩洛夫斯宇同志向你致以亲切问候！</p>
-        
+                
+            <!-- Sidebar Container -->
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
 
-        <!-- SNS Link -->
-        <ul class="list-inline">
+                <!-- Featured Tags -->
+                
 
-            
+                <!-- Friends Blog -->
+                <!--
+                
+                <hr>
+                <h5>FRIENDS</h5>
+                <ul class="list-inline">
 
-            
-                <li>
-                    <a target="_blank" href="https://jianshu.com/u/00a615eea12f">
-                        <span class="fa-stack fa-lg">
-                            <i class="fa fa-circle fa-stack-2x"></i>
-                            <i class="fa  fa-stack-1x fa-inverse">简</i>
-                        </span>
-                    </a>
-                </li>
-            
+                    
+                        <li><a href="http://efly.nenu.edu.cn" target="_blank">Efly Studio</a></li>
+                    
+                </ul>
+                
+                -->
 
-            
-                <li>
-                    <a target="_blank"  href="https://github.com/amvoidhub">
-                        <span class="fa-stack fa-lg">
-                            <i class="fa fa-circle fa-stack-2x"></i>
-                            <i class="fa fa-github fa-stack-1x fa-inverse"></i>
-                        </span>
-                    </a>
-                </li>
-            
-
-            
-                <li>
-                    <a target="_blank"  href="https://www.linkedin.com/in/amvoidin">
-                        <span class="fa-stack fa-lg">
-                            <i class="fa fa-circle fa-stack-2x"></i>
-                            <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
-                        </span>
-                    </a>
-                </li>
-            
-
-            
-                <li>
-                    <a target="_blank" href="https://www.zhihu.com/people/amovia">
-                        <span class="fa-stack fa-lg">
-                            <i class="fa fa-circle fa-stack-2x"></i>
-                            <i class="fa  fa-stack-1x fa-inverse">知</i>
-                        </span>
-                    </a>
-                </li>
-            
-
-            
-                <li>
-                    <a target="_blank" href="http://weibo.com/amovia">
-                        <span class="fa-stack fa-lg">
-                            <i class="fa fa-circle fa-stack-2x"></i>
-                            <i class="fa fa-weibo fa-stack-1x fa-inverse"></i>
-                        </span>
-                    </a>
-                </li>
-            
-
-            
-
-            
-
-            
-                <li>
-                    <a target="_blank" href="http://steamcommunity.com/profiles/76561198317707147">
-                        <span class="fa-stack fa-lg">
-                            <i class="fa fa-circle fa-stack-2x"></i>
-                            <i class="fa fa-steam fa-stack-1x fa-inverse"></i>
-                        </span>
-                    </a>
-                </li>
-            
-
-        </ul>
+            </div>
+        </div>
     </div>
-</section>
-        <hr>
-    
-        
-  <h5>RECENT POSTS</h3>
-  <div class="widget">
-    <ul>
-      
-        <li>
-          <a href="/articles/2017/05/29/readbook-vol-1-1/">《计算机与人脑》--读书笔记vol.1.1</a>
-        </li>
-      
-        <li>
-          <a href="/articles/2017/05/16/readbook-vol-1-0/">《计算机与人脑》--读书笔记vol.1.0</a>
-        </li>
-      
-        <li>
-          <a href="/articles/2017/05/01/travel-in-Changbai/">长白常白长白山</a>
-        </li>
-      
-        <li>
-          <a href="/articles/2017/04/17/oxygenmode-start/">正在开启氧模式</a>
-        </li>
-      
-    </ul>
-  </div>
+</article>
 
-        <hr>
-    
-        <!-- Friends Blog -->
 
-<h5>FRIENDS</h5>
-<ul class="list-inline">
 
-    
-        <li><a href="http://efly.nenu.edu.cn" target="_blank">Efly Studio</a></li>
-    
-</ul>
 
-        <hr>
-    
-</div>
 
-        
-    </div>
-</div>
+
+
+<!-- async load function -->
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+<!-- anchor-js, Doc:http://bryanbraun.github.io/anchorjs/ -->
+<script>
+    async("https://cdn.bootcss.com/anchor-js/1.1.1/anchor.min.js",function(){
+        anchors.options = {
+          visible: 'hover',
+          placement: 'left',
+          icon: 'ψ'
+        };
+        anchors.add().remove('.intro-header h1').remove('.subheading').remove('.sidebar-container h5');
+    })
+</script>
+<style>
+    /* place left on bigger screen */
+    @media all and (min-width: 800px) {
+        .anchorjs-link{
+            position: absolute;
+            left: -0.75em;
+            font-size: 1.1em;
+            margin-top : -0.1em;
+        }
+    }
+</style>
+
 
 
     <!-- Footer -->
