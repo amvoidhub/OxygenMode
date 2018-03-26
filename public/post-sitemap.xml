@@ -7,16 +7,8 @@
     </url>
 
     <url>
-        <loc>https://amvoidhub.gihub.io/articles/2017/05/29/readbook-vol-1-1/</loc>
-        <lastmod>2017-08-05T14:58:50.126Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://amvoidhub.gihub.io/articles/2017/05/16/readbook-vol-1-0/</loc>
-        <lastmod>2017-07-10T04:31:08.708Z</lastmod>
+        <loc>https://amvoidhub.gihub.io/articles/2017/05/16/readbook-vol-1/</loc>
+        <lastmod>2018-03-26T00:37:33.836Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -24,7 +16,15 @@
 
     <url>
         <loc>https://amvoidhub.gihub.io/articles/2017/05/01/travel-in-Changbai/</loc>
-        <lastmod>2017-07-10T04:24:11.823Z</lastmod>
+        <lastmod>2018-03-15T07:52:32.966Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://amvoidhub.gihub.io/articles/2017/05/01/travel-in-Changbai/travel-in-Changbai/</loc>
+        <lastmod>2018-03-15T07:52:32.966Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -32,7 +32,7 @@
 
     <url>
         <loc>https://amvoidhub.gihub.io/articles/2017/04/17/oxygenmode-start/</loc>
-        <lastmod>2017-07-10T04:12:42.385Z</lastmod>
+        <lastmod>2018-03-10T07:22:24.144Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
