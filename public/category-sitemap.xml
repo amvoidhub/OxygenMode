@@ -1,28 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="sitemap.xsl"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-        <loc>https://amvoidhub.gihub.io</loc>
+        <loc>https://oxygenmode.github.io</loc>
         <changefreq>daily</changefreq>
         <priority>1</priority>
     </url>
 
     <url>
-        <loc>https://amvoidhub.gihub.io/categories/%E7%9E%8E%E5%86%99/</loc>
-        <lastmod>2018-03-10T07:22:24.144Z</lastmod>
+        <loc>https://oxygenmode.github.io/categories/%E6%B8%B8%E8%AE%B0/</loc>
+        <lastmod>2018-03-26T07:43:50.424Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
-        <loc>https://amvoidhub.gihub.io/categories/%E6%B8%B8%E8%AE%B0/</loc>
-        <lastmod>2018-03-15T07:52:32.966Z</lastmod>
+        <loc>https://oxygenmode.github.io/categories/%E7%9E%8E%E5%86%99/</loc>
+        <lastmod>2018-03-27T05:37:14.554Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
-        <loc>https://amvoidhub.gihub.io/categories/%E9%97%B2%E8%AF%BB/</loc>
-        <lastmod>2018-03-26T00:37:33.836Z</lastmod>
+        <loc>https://oxygenmode.github.io/categories/%E9%97%B2%E8%AF%BB/</loc>
+        <lastmod>2018-03-27T06:20:52.686Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://oxygenmode.github.io/categories/Minecraft/</loc>
+        <lastmod>2018-03-30T09:58:45.749Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://oxygenmode.github.io/categories/Minecraft/%E6%9C%8D%E5%8A%A1%E5%99%A8/</loc>
+        <lastmod>2018-03-30T09:58:45.749Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>

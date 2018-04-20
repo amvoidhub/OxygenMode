@@ -12,7 +12,7 @@ timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: https://amvoidhub.gihub.io       # Note: don't forget to modify the CNAME file to your url
+url: https://oxygenmode.me       # Note: don't forget to modify the CNAME file to your url
 root: /
 permalink: articles/:year/:month/:day/:title/
 permalink_defaults: 
@@ -171,5 +171,5 @@ sitemap:
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repository: git@github.com:amvoidhub/amvoidhub.github.io.git
+  repository: git@github.com:OxygenMode/OxygenMode.github.io.git
   branch: master

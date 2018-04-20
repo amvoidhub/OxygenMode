@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head tag -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="google-site-verification" content="xBT4GhYoi5qRD5tr338pgPM5OWHHIDR6mNg1a3euekI" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A blog of amvoid">
+    <meta name="keyword"  content="oxygenmode,OxygenMode,氧模式">
+    <link rel="shortcut icon" href="/img/tabicon.png">
+    <!-- Place this tag in your head or just before your close body tag. -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+    <title>
+        
+          Minecraft个人私服搭建指南 - O2 | 氧模式
+        
+    </title>
+
+    <link rel="canonical" href="https://oxygenmode.me/articles/2017/06/17/minecraft-server-1/">
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    <!-- Custom CSS --> 
+    <link rel="stylesheet" href="/css/beantech.min.css">
+    
+    <!-- Pygments Highlight CSS -->
+    <link rel="stylesheet" href="/css/highlight.css">
+
+    <link rel="stylesheet" href="/css/widget.css">
+
+    <link rel="stylesheet" href="/css/rocket.css">
+
+    <link rel="stylesheet" href="/css/signature.css">
+
+    <link rel="stylesheet" href="/css/toc.css">
+
+    <!-- Custom Fonts -->
+    <!-- <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"> -->
+    <!-- Hux change font-awesome CDN to qiniu -->
+    <link href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+
+    <!-- Hux Delete, sad but pending in China
+    <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/
+    css'>
+    -->
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- ga & ba script hoook -->
+    <script></script>
+</head>
+
+
+<!-- hack iOS CSS :active style -->
+<body ontouchstart="">
+	<!-- Modified by Yu-Hsuan Yen -->
+<!-- Post Header -->
+<style type="text/css">
+    header.intro-header{
+        
+            background-image: url('img/Demo.jpg')
+            /*post*/
+        
+    }
+    
+</style>
+
+<header class="intro-header" >
+    <!-- Signature -->
+    <div id="signature">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                
+                    <div class="post-heading">
+                        <div class="tags">
+                            
+                              <a class="tag" href="/tags/#Minecraft" title="Minecraft">Minecraft</a>
+                            
+                        </div>
+                        <h1>Minecraft个人私服搭建指南（上）</h1>
+                        <h2 class="subheading">出于对基友深沉得爱，我觉得有必要认认真真写一篇私服搭建指导教程。</h2>
+                        <span class="meta">
+                            Posted by AmVoid on
+                            2017-06-17
+                        </span>
+                    </div>
+                
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+	
+    <!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">OxygenMode</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <!-- Known Issue, found by Hux:
+            <nav>'s height woule be hold on by its content.
+            so, when navbar scale out, the <nav> will cover tags.
+            also mask any touch event of tags, unfortunately.
+        -->
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/">首页·Home</a>
+                    </li>
+                    <li>
+                        <a href="https://oxygenmood.github.io">心情·Mood</a>
+                    </li>
+
+                    
+
+                        
+                    
+
+                        
+                        <li>
+                            <a href="/about/">关于·About</a>
+                        </li>
+                        
+                    
+
+                        
+                        <li>
+                            <a href="/archive/">归档·Archives</a>
+                        </li>
+                        
+                    
+
+                        
+                        <li>
+                            <a href="/tags/">标签·Tags</a>
+                        </li>
+                        
+                    
+                    
+                </ul>
+            </div>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+<script>
+    // Drop Bootstarp low-performance Navbar
+    // Use customize navbar with high-quality material design animation
+    // in high-perf jank-free CSS3 implementation
+    var $body   = document.body;
+    var $toggle = document.querySelector('.navbar-toggle');
+    var $navbar = document.querySelector('#huxblog_navbar');
+    var $collapse = document.querySelector('.navbar-collapse');
+
+    $toggle.addEventListener('click', handleMagic)
+    function handleMagic(e){
+        if ($navbar.className.indexOf('in') > 0) {
+        // CLOSE
+            $navbar.className = " ";
+            // wait until animation end.
+            setTimeout(function(){
+                // prevent frequently toggle
+                if($navbar.className.indexOf('in') < 0) {
+                    $collapse.style.height = "0px"
+                }
+            },400)
+        }else{
+        // OPEN
+            $collapse.style.height = "auto"
+            $navbar.className += " in";
+        }
+    }
+</script>
+
+
+    <!-- Main Content -->
+    <!-- Modify by Yu-Hsuan Yen -->
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+
+            <!-- Post Container -->
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                post-container">
+
+                <p>  之前搭建了一台minecraft私服，拉了基友和妹子来玩，体验了一把当“腐竹”的感觉。基友为了和他的其他基友（也就是我基友的基友）也搭建私服一起玩耍，向我请教了一番表示要学习点人生经验。出于对基友深沉得爱，我觉得有必要认认真真写一篇私服搭建指导教程。</p>
+<hr>
+<p><strong>在教程开始之前，需要声明以下几点：</strong></p>
+<p>  1.这篇教程并非完全傻瓜式教程，你需要有一定的计算机基础操作能力比如：开关机，浏览网页，使用搜索引擎。</p>
+<p>  2.如果你现在想问问我“什么是minecraft？”“建服务器干啥用？”，强烈建议点击电脑屏幕右上角或者按手机返回键。</p>
+<p>  3.你需要有及其出色的耐心和理解能力来搞清楚本篇——由“程序员”写出的，生涩难懂的——教程。或者你不完全明白也没所谓，你能跟着一步一步操作的话，应该也是可以达到预定效果的。</p>
+<p>  4.由于操作设备差异，对此教程中出现的服务器操作代码和指令，你需要一定的变通应用能力，或者放弃能力。</p>
+<p>  5.本教程以<strong>minecraft官方最原版1.11服务端</strong>搭建作为演示案例,第三方和集成包的各种情况下，操作原理通用，但操作方式略有差异，不再针对性说明。</p>
+<hr>
+<h2 id="先去搞一台云服务器">先去搞一台云服务器</h2>
+<p>  所谓的云服务器，<a href="https://link.jianshu.com/?t=http://baike.baidu.com/link?url=a6ccFv4JhedFsQjg_DzgCbM8pQpeVNiJIAGC5XUxDp5NnmLfMuw-kcxh45wI2qfuEGV4yUkx5qq2Js0_E9EmyvZJxC_KCRaiS_b8n1uG5FxkQd0WI--X0VAp1MGsXjlu" target="_blank" rel="external">就是这么个东西</a>。</p>
+<p>  目前国内云服务器运营不错的有BAT（百度、阿里、腾讯）三家，本教程推荐使用腾讯云，尤其是针对在校大学生，腾讯云还额外提供校园优惠业务，最低每月一元提供基础配置服务器，对于搭建10人左右小型minecraft服务器完全够用。</p>
+<p>  首先需要申请腾讯云提供的“云+校园”优惠业务，此过程按流程操作，需要<strong>实名认证</strong>和<strong>学生认证</strong>，成功之后即可领取学生优惠。</p>
+<p><img src="img/img1.png" alt="“云+校园”服务"><br>
+<img src="img/img2.png" alt="马上领取"></p>
+<p>  拿到券或者没拿到之后，就可以进入申请“云服务器”流程。</p>
+<p><img src="img/img3.png" alt="申请服务器"><br>
+<img src="img/img4.png" alt="申请服务器"></p>
+<p>  这里【地域】选项中注意选择距你个人所在区域较近的服务器，减少延迟和ping值，更加流畅。</p>
+<p><img src="img/img5.png" alt="设置服务器"></p>
+<p>  镜像设置步骤中，服务器系统推荐使用Linux系统中的CentOS，相对于臃肿的Windows Server，Linux优点在于更少占用硬件配置，低配置更加流畅，并且易于使用指令进行操作。当然如果你更加熟悉其他类型的linux系统（比如Ubuntu），也可以按照个人情况与水平进行选择设置。</p>
+<p><img src="img/img6.png" alt="设置服务器"><br>
+<img src="img/img7.png" alt="设置服务器"></p>
+<p>  最后服务器配置，按要求<strong>设置密码并且牢记密码</strong>。</p>
+<p>  注意：<strong>【安全组切】记要选择【默认安全组放通全部端口】</strong>，这样才能允许他人通过你的服务器ip访问进你的服务器，并且一起玩耍。</p>
+<p><img src="img/img8.png" alt="设置服务器"></p>
+<p>  稍作等一下下，你的云服务器就会完成装配。装配完毕后，回到腾讯云的主页，点击网页右上角【管理中心】，选择你刚刚装配好的云服务器，然后就可以在管理界面管理你所拥有的云服务器啦。</p>
+<p><img src="img/img9.png" alt="管理界面"></p>
+<hr>
+<h2 id="在电脑上你还需要这些">在电脑上你还需要这些</h2>
+<p>  现在你有了自己的云服务器，然后在你的电脑上，你需要的是这些软件：Xshell、Xftp（<a href="https://link.jianshu.com/?t=http://pan.baidu.com/s/1skOLxtN" target="_blank" rel="external">获取方式点击这里</a>），用来通过远程方式管理你的云端服务器。</p>
+<p>  注意：软件均为英文，正常步骤安装，中间安装选项请选择“Free for Home/School”。</p>
+<p>  Xshell用来远程访问与控制，Xftp用来远程传输文件。有这两个软件，就可以在你自己的电脑上来访问控制你的云服务器和传输文件到你的云服务器。</p>
+<p><img src="img/img10.png" alt="Xshell+Xftp"></p>
+<hr>
+<h2 id="来调戏试一下云服务器">来调<s>戏</s>试一下云服务器</h2>
+<p>  首先打开Xshell，你会看到这个界面，然后点开“会话”窗口里的“新建”。</p>
+<p><img src="img/img11.png" alt="Xshell界面"></p>
+<p>  名称按喜好自己给填，协议要选默认的<strong>SSH</strong>主机要填<strong>上文第一部分中最后一张图里，红圈标注的公网ip地址</strong>，端口号为默认22，说明按喜好自己填写，其他均为默认设置，确定。</p>
+<p><img src="img/img12.png" alt="Xshell配置"></p>
+<p>  接下来点开【连接】，然后选择【接受并保存】。</p>
+<p><img src="img/img13.png" alt="Xshell连接"><br>
+<img src="img/img14.png" alt="Xshell连接"></p>
+<p>  登录，输入用户名为root，密码是申请服务器时设定的密码。这就是为什么上文让你牢记密码的原因，如果你已经忘了的话，加油想一想。</p>
+<p><img src="img/img15.png" alt="Xshell登录"><br>
+<img src="img/img16.png" alt="Xshell登录"></p>
+<p>  登录完成，你应该就可以看见下面这个界面了。</p>
+<p><img src="img/img17.png" alt="Xshell登录完成"></p>
+<hr>
+<p>  现在，你已经有了一台自己的云服务器，并且可以通过自己的电脑远程访问与控制。接下来，我们要做的就是，通过远程操作，来完善服务器环境配置，让我们的云服务器做好准备，来顺利运行Minecraft服务端。</p>
+<p>  接下来的教程，将继续用Xshell进行远程控制，升级我们的服务器系统，检查配置，配置Java，screen，以及运行Minecraft服务端。</p>
+<p>  未完待续。</p>
+
+                
+
+                <hr>
+                <!-- Pager -->
+                <ul class="pager">
+                    
+                        <li class="previous">
+                            <a href="/articles/2017/05/16/readbook-vol-1/" data-toggle="tooltip" data-placement="top" title="《计算机与人脑》--读书笔记vol.1">&larr; Previous Post</a>
+                        </li>
+                    
+                    
+                        <li class="next">
+                            <a href="/articles/2017/06/17/minecraft-server-2/" data-toggle="tooltip" data-placement="top" title="Minecraft个人私服搭建指南（下）">Next Post &rarr;</a>
+                        </li>
+                    
+                </ul>
+
+                <!-- duoshuo Share start -->
+                
+                <!-- 多说 Share end-->
+
+                <!-- 多说评论框 start -->
+                
+                <!-- 多说评论框 end -->
+
+                <!-- disqus comment start -->
+                
+                <!-- disqus comment end -->
+            </div>
+            
+            <!-- Tabe of Content -->
+            <!-- Table of Contents -->
+
+    
+      <aside id="sidebar">
+        <div id="toc" class="toc-article">
+        <strong class="toc-title">Contents</strong>
+        
+          <ol class="toc-nav"><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#先去搞一台云服务器"><span class="toc-nav-number">1.</span> <span class="toc-nav-text">先去搞一台云服务器</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#在电脑上你还需要这些"><span class="toc-nav-number">2.</span> <span class="toc-nav-text">在电脑上你还需要这些</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#来调戏试一下云服务器"><span class="toc-nav-number">3.</span> <span class="toc-nav-text">来调戏试一下云服务器</span></a></li></ol>
+        
+        </div>
+      </aside>
+    
+
+                
+            <!-- Sidebar Container -->
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+                <!-- Featured Tags -->
+                
+
+                <!-- Friends Blog -->
+                <!--
+                
+                <hr>
+                <h5>FRIENDS</h5>
+                <ul class="list-inline">
+
+                    
+                        <li><a href="http://efly.nenu.edu.cn" target="_blank">Efly Studio</a></li>
+                    
+                </ul>
+                
+                -->
+
+            </div>
+        </div>
+    </div>
+</article>
+
+
+
+
+
+
+
+<!-- async load function -->
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+<!-- anchor-js, Doc:http://bryanbraun.github.io/anchorjs/ -->
+<script>
+    async("https://cdn.bootcss.com/anchor-js/1.1.1/anchor.min.js",function(){
+        anchors.options = {
+          visible: 'hover',
+          placement: 'left',
+          icon: 'ψ'
+        };
+        anchors.add().remove('.intro-header h1').remove('.subheading').remove('.sidebar-container h5');
+    })
+</script>
+<style>
+    /* place left on bigger screen */
+    @media all and (min-width: 800px) {
+        .anchorjs-link{
+            position: absolute;
+            left: -0.75em;
+            font-size: 1.1em;
+            margin-top : -0.1em;
+        }
+    }
+</style>
+
+
+
+    <!-- Footer -->
+    <!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+
+                
+
+                
+                    <li>
+                        <a target="_blank" href="https://jianshu.com/u/00a615eea12f">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa  fa-stack-1x fa-inverse">简</i>
+                            </span>
+                        </a>
+                    </li>
+                
+
+                
+                    <li>
+                        <a target="_blank"  href="https://github.com/amvoidhub">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                
+
+                
+                    <li>
+                        <a target="_blank"  href="https://www.linkedin.com/in/amvoidin">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                
+
+                
+                    <li>
+                        <a target="_blank" href="https://www.zhihu.com/people/amovia">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa  fa-stack-1x fa-inverse">知</i>
+                            </span>
+                        </a>
+                    </li>
+                
+
+                
+                    <li>
+                        <a target="_blank" href="http://weibo.com/amovia">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-weibo fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                
+
+                
+
+                
+
+                
+                    <li>
+                        <a target="_blank" href="http://steamcommunity.com/profiles/76561198317707147">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-steam fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                
+
+                </ul>
+                <p class="copyright text-muted">
+                    Copyright &copy; AmVoid 2018 
+                    <br>
+                    Theme by <a href="http://huangxuan.me">Hux</a> 
+                    <span style="display: inline-block; margin: 0 5px;">
+                        <i class="fa fa-heart"></i>
+                    </span> 
+                    <!--
+                    re-Ported by <a href="http://beantech.org">BeanTech</a> | 
+                    <iframe
+                        style="margin-left: 2px; margin-bottom:-5px;"
+                        frameborder="0" scrolling="0" width="91px" height="20px"
+                        src="https://ghbtns.com/github-btn.html?user=YenYuHsuan&repo=hexo-theme-beantech&type=star&count=true" >
+                    </iframe>
+                    -->
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- jQuery -->
+<script src="/js/jquery.min.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="/js/bootstrap.min.js"></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="/js/hux-blog.min.js"></script>
+
+
+<!-- async load function -->
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+<!-- 
+     Because of the native support for backtick-style fenced code blocks 
+     right within the Markdown is landed in Github Pages, 
+     From V1.6, There is no need for Highlight.js, 
+     so Huxblog drops it officially.
+
+     - https://github.com/blog/2100-github-pages-now-faster-and-simpler-with-jekyll-3-0  
+     - https://help.github.com/articles/creating-and-highlighting-code-blocks/    
+-->
+<!--
+    <script>
+        async("http://cdn.bootcss.com/highlight.js/8.6/highlight.min.js", function(){
+            hljs.initHighlightingOnLoad();
+        })
+    </script>
+    <link href="http://cdn.bootcss.com/highlight.js/8.6/styles/github.min.css" rel="stylesheet">
+-->
+
+
+<!-- jquery.tagcloud.js -->
+<script>
+    // only load tagcloud.js in tag.html
+    if($('#tag_cloud').length !== 0){
+        async("https://oxygenmode.me/js/jquery.tagcloud.js",function(){
+            $.fn.tagcloud.defaults = {
+                //size: {start: 1, end: 1, unit: 'em'},
+                color: {start: '#bbbbee', end: '#0085a1'},
+            };
+            $('#tag_cloud a').tagcloud();
+        })
+    }
+</script>
+
+<!--fastClick.js -->
+<script>
+    async("https://cdn.bootcss.com/fastclick/1.0.6/fastclick.min.js", function(){
+        var $nav = document.querySelector("nav");
+        if($nav) FastClick.attach($nav);
+    })
+</script>
+
+
+<!-- Google Analytics -->
+
+
+<script>
+    // dynamic User by Hux
+    var _gaId = 'UA-97117497-1';
+    var _gaDomain = 'https://amvoidhub.github.io/';
+
+    // Originial
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', _gaId, _gaDomain);
+    ga('send', 'pageview');
+</script>
+
+
+
+
+<!-- Baidu Tongji -->
+
+<script>
+    // dynamic User by Hux
+    var _baId = 'f42837ef82147164abeb122e5ac5082f';
+
+    // Originial
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "//hm.baidu.com/hm.js?" + _baId;
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+
+
+
+
+
+
+	<a id="rocket" href="#top" class=""></a>
+	<script type="text/javascript" src="/js/totop.js?v=1.0.0" async=""></script>
+    <script type="text/javascript" src="/js/toc.js?v=1.0.0" async=""></script>
+<!-- Image to hack wechat -->
+<!--<img src="https://oxygenmode.me/img/icon_wechat.png" width="0" height="0" />-->
+<!-- Migrate from head to bottom, no longer block render and still work -->
+
+</body>
+
+</html>
