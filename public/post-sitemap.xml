@@ -1,13 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="sitemap.xsl"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-        <loc>https://oxygenmode.github.io</loc>
+        <loc>http://oxygenmode.me</loc>
         <changefreq>daily</changefreq>
         <priority>1</priority>
     </url>
 
     <url>
-        <loc>https://oxygenmode.github.io/articles/2017/06/17/minecraft-server-2/</loc>
+        <loc>http://oxygenmode.me/articles/edm_intro/</loc>
+        <lastmod>2019-07-29T10:32:42.613Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>http://oxygenmode.me/articles/readbook_vol_1/</loc>
+        <lastmod>2019-01-22T14:07:59.688Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>http://oxygenmode.me/articles/readbook_vol_2/</loc>
+        <lastmod>2019-01-09T15:24:24.957Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>http://oxygenmode.me/articles/carl_jung_intro/</loc>
+        <lastmod>2018-09-01T05:14:37.533Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>http://oxygenmode.me/articles/minecraft_server_2/</loc>
         <lastmod>2018-03-30T09:58:45.749Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -15,7 +47,7 @@
     </url>
 
     <url>
-        <loc>https://oxygenmode.github.io/articles/2017/06/17/minecraft-server-1/</loc>
+        <loc>http://oxygenmode.me/articles/minecraft_server_1/</loc>
         <lastmod>2018-03-29T10:21:37.093Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -23,15 +55,7 @@
     </url>
 
     <url>
-        <loc>https://oxygenmode.github.io/articles/2017/05/16/readbook-vol-1/</loc>
-        <lastmod>2018-03-27T06:20:52.686Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://oxygenmode.github.io/articles/2017/04/17/oxygenmode-start/</loc>
+        <loc>http://oxygenmode.me/articles/oxygenmode_start/</loc>
         <lastmod>2018-03-27T05:37:14.554Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -39,7 +63,7 @@
     </url>
 
     <url>
-        <loc>https://oxygenmode.github.io/articles/2017/05/01/travel-in-Changbai/</loc>
+        <loc>http://oxygenmode.me/articles/travel_in_Changbai/</loc>
         <lastmod>2018-03-26T07:43:50.424Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>

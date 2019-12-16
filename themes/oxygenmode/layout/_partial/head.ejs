@@ -35,6 +35,11 @@
 
     <%- css('css/toc')%>
 
+    <!-- Import APlayer.js -->
+    <% if (page.aplayer === true) { %>
+      <%- partial('_widget/aplayer') %>
+    <% } %>
+
     <!-- Custom Fonts -->
     <!-- <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"> -->
     <!-- Hux change font-awesome CDN to qiniu -->
@@ -56,5 +61,6 @@
     <![endif]-->
 
     <!-- ga & ba script hoook -->
+
     <script></script>
 </head>

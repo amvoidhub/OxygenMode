@@ -6,15 +6,15 @@
 title: OxygenMode
 nav_brand: OxygenMode
 subtitle: "欢迎开启氧模式 · 一位冒牌技术员的个人博客"
-author: AmVoid
+author: 喵哼魚。
 language: zh-CN
 timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: https://oxygenmode.me       # Note: don't forget to modify the CNAME file to your url
+url: http://oxygenmode.me       # Note: don't forget to modify the CNAME file to your url
 root: /
-permalink: articles/:year/:month/:day/:title/
+permalink: articles/:title/
 permalink_defaults: 
 
 #Custom Setting Start
@@ -57,13 +57,13 @@ anchorjs: true                          # if you want to customize anchor. check
 # Baidu Analytics
 ba_track_id: f42837ef82147164abeb122e5ac5082f
 # Google Analytics
-ga_track_id: 'UA-97117497-1'          # Format: UA-xxxxxx-xx
-ga_domain: https://amvoidhub.github.io/
+# ga_track_id:           # Format: UA-xxxxxx-xx
+# ga_domain: 
 
 
 # Sidebar settings
 sidebar: true                       # whether or not using Sidebar.
-sidebar-about-description: "毛斯特珩洛夫斯宇同志向你致以亲切问候！"
+sidebar-about-description: "喵哼魚同志向你致以亲切问候！"
 sidebar-avatar: img/me.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 widgets:
 # - featured-tags
@@ -88,10 +88,12 @@ featured-condition-size: 3              # A tag will be featured if the size of 
 friends: [
     {
         title: "Efly Studio",
-        href: "http://efly.nenu.edu.cn"
+        href: "http://efly.nenu.edu.cn"      
+    },{
+        title: "OxygenMood",
+        href: "https://oxygenmood.github.io"
     }
 ]
-
 
 #Custom Setting End
 
@@ -171,5 +173,5 @@ sitemap:
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repository: git@github.com:OxygenMode/OxygenMode.github.io.git
+  repository: https://github.com/OxygenMode/OxygenMode.github.io.git
   branch: master

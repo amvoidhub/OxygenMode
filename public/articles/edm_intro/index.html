@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head tag -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="google-site-verification" content="xBT4GhYoi5qRD5tr338pgPM5OWHHIDR6mNg1a3euekI" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A blog of amvoid">
+    <meta name="keyword"  content="oxygenmode,OxygenMode,氧模式">
+    <link rel="shortcut icon" href="/img/tabicon.png">
+    <!-- Place this tag in your head or just before your close body tag. -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+    <title>
+        
+          电音入门 - O2 | 氧模式
+        
+    </title>
+
+    <link rel="canonical" href="http://oxygenmode.me/articles/edm_intro/">
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    <!-- Custom CSS --> 
+    <link rel="stylesheet" href="/css/beantech.min.css">
+    
+    <!-- Pygments Highlight CSS -->
+    <link rel="stylesheet" href="/css/highlight.css">
+
+    <link rel="stylesheet" href="/css/widget.css">
+
+    <link rel="stylesheet" href="/css/rocket.css">
+
+    <link rel="stylesheet" href="/css/signature.css">
+
+    <link rel="stylesheet" href="/css/toc.css">
+
+    <!-- Import APlayer.js -->
+    
+      <!-- Import APlayer -->
+<link href="https://cdn.jsdelivr.net/npm/aplayer@1.9.0/dist/APlayer.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/aplayer@1.9.0/dist/APlayer.min.js"></script>
+<!-- Import meting.js -->
+<script src="https://cdn.jsdelivr.net/npm/meting@1.1.1/dist/Meting.min.js"></script>
+    
+
+    <!-- Custom Fonts -->
+    <!-- <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"> -->
+    <!-- Hux change font-awesome CDN to qiniu -->
+    <link href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+
+    <!-- Hux Delete, sad but pending in China
+    <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/
+    css'>
+    -->
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- ga & ba script hoook -->
+
+    <script></script>
+</head>
+
+
+<!-- hack iOS CSS :active style -->
+<body ontouchstart="">
+	<!-- Modified by Yu-Hsuan Yen -->
+<!-- Post Header -->
+<style type="text/css">
+    header.intro-header{
+        
+            background-image: url('./img/Demo.jpg')
+            /*post*/
+        
+    }
+    
+</style>
+
+<header class="intro-header" >
+    <!-- Signature -->
+    <div id="signature">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                
+                    <div class="post-heading">
+                        <div class="tags">
+                            
+                              <a class="tag" href="/tags/#电音" title="电音">电音</a>
+                            
+                        </div>
+                        <h1>电音——不完全入门指南</h1>
+                        <h2 class="subheading">这是一篇完全不负责任的不完全电音入门指南，如果我有哪部分讲错了，就不要告诉我了……</h2>
+                        <span class="meta">
+                            Posted by 喵哼魚。 on
+                            2018-07-17
+                        </span>
+                    </div>
+                
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+	
+    <!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">OxygenMode</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <!-- Known Issue, found by Hux:
+            <nav>'s height woule be hold on by its content.
+            so, when navbar scale out, the <nav> will cover tags.
+            also mask any touch event of tags, unfortunately.
+        -->
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/">首页·Home</a>
+                    </li>
+                    <li>
+                        <a href="https://oxygenmood.github.io">心情·Mood</a>
+                    </li>
+
+                    
+
+                        
+                    
+
+                        
+                        <li>
+                            <a href="/about/">关于·About</a>
+                        </li>
+                        
+                    
+
+                        
+                        <li>
+                            <a href="/archive/">归档·Archives</a>
+                        </li>
+                        
+                    
+
+                        
+                        <li>
+                            <a href="/tags/">标签·Tags</a>
+                        </li>
+                        
+                    
+                    
+                </ul>
+            </div>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+<script>
+    // Drop Bootstarp low-performance Navbar
+    // Use customize navbar with high-quality material design animation
+    // in high-perf jank-free CSS3 implementation
+    var $body   = document.body;
+    var $toggle = document.querySelector('.navbar-toggle');
+    var $navbar = document.querySelector('#huxblog_navbar');
+    var $collapse = document.querySelector('.navbar-collapse');
+
+    $toggle.addEventListener('click', handleMagic)
+    function handleMagic(e){
+        if ($navbar.className.indexOf('in') > 0) {
+        // CLOSE
+            $navbar.className = " ";
+            // wait until animation end.
+            setTimeout(function(){
+                // prevent frequently toggle
+                if($navbar.className.indexOf('in') < 0) {
+                    $collapse.style.height = "0px"
+                }
+            },400)
+        }else{
+        // OPEN
+            $collapse.style.height = "auto"
+            $navbar.className += " in";
+        }
+    }
+</script>
+
+
+    <!-- Main Content -->
+    <!-- Modify by Yu-Hsuan Yen -->
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+
+            <!-- Post Container -->
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                post-container">
+
+                <h2 id="入门来了解一下">入门？来了解一下</h2>
+<p>  电音，电子音乐。其实我本人接触电音还算得上挺早，因为在初中玩电子游戏的缘故在初中就开始中毒了电子音乐。印象中那时候对电音的最多接触就是玩极品飞车（NFS系列）以及狂野飙车时，听着随机循环的游戏自带音乐，通关各种赛道任务。至今还记得当初在屏幕上的赛道上竞速时，切歌到<a href="http://music.163.com/#/song?id=17245032" target="_blank" rel="external"><em>Ghosts ‘n’ Stuff —— Deadmau5</em></a>时肾上腺素的飙升感。</p>
+<p>  然而遗憾的是，除了满足于简单的听觉享受之外，我也并没有深入的了解一下电音的深度知识内容，以至于当别人问我喜欢的风格类别是House还是Trance时，我都只能含糊其辞。</p>
+<p>  后来也是自己泛泛的了解一些电音小知识和科普性内容，加之GFW内搜不到一章很好的关于电音科普文，感叹国内电音小众化之余，决定整理出这篇<strong>不完全入门指南</strong></p>
+<hr>
+<h2 id="有关电音的一些东西">有关电音的一些东西</h2>
+<p>  电子音乐（<em>Electronic Music</em>）往往简称为『电音』，广义来讲，只要是通过电子乐器或者电脑合成制作出来的音乐作品都属于电子音乐范畴。但具体来说，电子音乐又有着它独立的分类体系和标准。所以对于各类电子音乐，一概而论是一种完全不准确的方式。</p>
+<h3 id="edmoh-edm">EDM？Oh EDM</h3>
+<p>  通常电音会被认为代表的就是电子舞曲（<em>Electronic Dance Music</em>），也就是国外所称的EDM。然而这里面有个小小的误会，电子音乐并不仅限于EDM.</p>
+<p>  对于早期的电子音乐，其发展形式以EDM为主，说到EDM当然离不开三个内容 —— <strong>E</strong>lectronic（电子）、<strong>D</strong>ance（跳舞）和 <strong>M</strong>usic（音乐）,这三个内容也是早期电子音乐形式的主要核心，诸如早期的House、Techno、Disco等电子音乐。实际上在上世纪90年代，尚未出现EDM这种说法的时候，国外主流媒体更愿意用“<em>Electronica</em>”来代指这种电子音乐，直到2008年以后，成名DJ的兴起使得EDM成为更广泛的电子舞曲代名词。</p>
+<p>  当然随着电子音乐的发展和衍变，EDM的发展也有了很多分类 —— Trance，Trap，Dubstep等（现在来说应该加上“流行”两字更为准确），正因为发展方向太过多元，很多分类下的细分类已经不能被算在EDM中了,因为很多电子音乐已经属于Non-dance范畴内的了。</p>
+<h3 id="mix-remix-xxx-mix">Mix, Remix, xxx Mix</h3>
+<p>  你可能听过一两首电音，然后觉得“哇哦还不错哦”然后就去某网络音乐播放器上搜这首电音，然后搜到的结果很可能会有很多曲名后跟着Mix、Remix、xxx mix这样的标识，然后心里面想这是个什么鬼。</p>
+<p>  Mix，为Audio Mixing的简写，也就是“混音”，就是把不同来源的音轨整合为一个音轨，从而制作成一首连贯的音乐歌曲。另外Original Mix意思为作品初版的意思。而Remixd则标示，该音乐歌曲是拿别人的作品，经过个人风格化加工而制作完成,通常是在保留基本旋律的基础上，对音色节奏拍子等进行种种改编，所以曲风甚至和原曲大相径庭。</p>
+<p>  另外还有radio mix——去掉首尾loop（大大缩短首尾的循环部分）的版本，以及extended mix——加长loop或者混音部分的版本。Continuous mix一般是类似串烧形式的音乐拼接，尤其是在派对或者show上会用来制造气氛，甚至包括一些临时创作、即兴发挥的成分。当然还有一些对原作改换风格进行remix创作，比如dub mix、progressive mix等等。</p>
+<h3 id="44-or-breakbeat">4/4 OR Breakbeat?</h3>
+<p>  Four on the Floor，也就是4/4拍，表示以四分音符为一拍，一个小节有四拍，比如最熟悉的类型“动次打次……”就属于典型4/4拍。同样还有慢拍如2/4拍，表示以四分音符为一拍，一小节有两拍。</p>
+<p>  Breakbeats碎拍，其实也没有真的碎得那么碎，不过是每一小节的拍子并不那么固定，中间的clap会在不同的地方出现，从而造成一种错乱感。实际上像Drum &amp; Bass（鼓打贝斯）这类风格化的音乐，鼓点听起来还蛮有节奏感。</p>
+<p>  而整体电音也可以按4/4 OR Breakbeat进行粗略的大致分类。</p>
+<p><img src="./img/44bb_img.jpg" alt="4/4ORBB"></p>
+<h3 id="bpm-amp-adsr-amp">BPM &amp; ADSR &amp; ……</h3>
+<p>  BPM，全称Beats per Minute，就是一分钟多少拍子，代表音乐节拍速度，数值越大也就意味着音乐节奏越快。比如120BPM，对于4/4拍的音乐，就表示一分钟内有1234 1234 1234……共30个周期，120拍。</p>
+<p>  ADSR一般在电音制作中较为常用，它是四个单词的首字母缩写——分別是Attack, Decay, Sustain, Release，具体的表示如下图……这里就不做详细说明了。</p>
+<p><img src="./img/ADSR_img.png" alt="ADSR"></p>
+<p>  还有一些可能在玩电音或者听电音时遇到的各类名词术语，就自行搜索吧，因为很多我也没那么明白，万一讲错了岂不会很尴尬。</p>
+<hr>
+<h2 id="不得不说的电音风格">不得不说的电音风格</h2>
+<p>  OK，从上世纪80-90年代电子音乐诞生，到现如今经过20多年的发展演变，电子音乐风格从单一的室内派对舞曲衍生出种种流行风格，也早已不是被人误解的仅仅是摇摆和动次打次。</p>
+<p><img src="./img/EDM_img1.png" alt="电音风格发展演变"></p>
+<p>  一首电音的风格归类要参考音乐的多个特征，本指南里我尽可能来选出具有代表性的风格分类简单介绍一下。</p>
+<h3 id="house"><strong>House</strong></h3>
+<p>  <strong>House</strong>，又被称为浩室音乐。可以这么来理解——这类风格的电音乐曲最早是在舞厅和室内播放，因而被称为House Music（误），实际上house music也是从disco也就是迪斯科舞曲发展而来的。House的节奏大多数是典型的4/4拍，就像“动次打次”这样。如果一首电音开头就是突出的鼓点节奏（或者渐入鼓点节奏），那会有很大可能会是一首House Music。</p>
+<p>  <strong>Deep House</strong>，具有代表性的慢速电音，2、4拍略重，一般节拍速度在120bpm左右。这类风格电音，把电音的激情放在较为舒缓又不失轻快的旋律中。Deep House风格适合在午后或者午夜，一个人来听，推荐两首我个人比较喜欢的deep house音乐：</p>
+<p>  🎧 <a href="http://music.163.com/#/song?id=485612576" target="_blank" rel="external"><em>Creep —— Gamper &amp; Dadoni / Ember Island</em></a></p>
+<div class="aplayer" data-id="485612576" data-server="netease" data-type="song" data-loop="none"></div>
+<!-- 
+<audio src="./audio/Creep.mp3" controls="controls">
+    哭泣 :-( ，你的垃圾浏览器不支持音频播放。
+</audio>
+-->
+<p>  🎧 <a href="http://music.163.com/#/song?id=427542186" target="_blank" rel="external"><em>Hear Me Now —— Alok / Bruno Martini / Zeeba</em></a></p>
+<div class="aplayer" data-id="427542186" data-server="netease" data-type="song" data-loop="none"></div>
+<!-- 
+<audio src="./audio/Hear Me Now.mp3" controls="controls">
+    哭泣 :-( ，你的垃圾浏览器不支持音频播放。
+</audio>
+-->
+<p>  <strong>Progressive House</strong>，最早兴起于欧洲的一种电音风格，有着渐进特点结构——整个音乐旋律渐进变化,由部分旋律的循环渐进为完整的旋律，或者是旋律从第一阶段渐进为第二阶段发生旋律变化。同样鼓点也会渐进变化，从没有鼓点到“动_打_”再到“动次打次”这样，甚至可以将其看作一种trance music。Progressive House风格音乐独特的气氛渲染力使这类音乐趋于流行化，并在公共场合例如商场被广泛<s>盗用</s>使用,同样推荐三首我个人比较喜欢的：</p>
+<p>  🎧 <a href="http://music.163.com/#/song?id=26625903" target="_blank" rel="external"><em>City of Dreams —— Dirty South / Alesso / Ruben Haze</em></a></p>
+<div class="aplayer" data-id="26625903" data-server="netease" data-type="song" data-loop="none"></div>
+<!-- 
+<audio src="./audio/City of Dreams[Radio Edit].mp3" controls="controls">
+    哭泣 :-( ，你的垃圾浏览器不支持音频播放。
+</audio>
+-->
+<p>  🎧 <a href="http://music.163.com/#/song?id=31830308" target="_blank" rel="external"><em>Aspire —— CelDro</em></a></p>
+<div class="aplayer" data-id="31830308" data-server="netease" data-type="song" data-loop="none"></div>
+<!-- 
+<audio src="./audio/Aspire.mp3" controls="controls">
+    哭泣 :-( ，你的垃圾浏览器不支持音频播放。
+</audio>
+-->
+<p>  🎧 <a href="http://music.163.com/#/song?id=34040720" target="_blank" rel="external"><em>Shadows —— Janji</em></a></p>
+<div class="aplayer" data-id="34040720" data-server="netease" data-type="song" data-loop="none"></div>
+<p>  <strong>Electro House</strong>，或称之为电气浩室，节拍速度在125-135bpm之间，其风格特点在于是在每一个拍点都有显著的Drum &amp; Bass，鼓打贝斯。Electro House风格的形成在很大程度上受到Electro（电子）、Electroclash（电子撞击）、POP（流行音乐）的影响，比如本文开头提到<a href="http://music.163.com/#/song?id=17245032" target="_blank" rel="external"><em>Ghosts ‘n’ Stuff——Deadmau5</em></a>。个人觉得这种风格的音乐比较适合自嗨和电子游戏BGM，再推荐两首我比较喜欢的：</p>
+<p>  🎧 <a href="http://music.163.com/#/song?id=36103134" target="_blank" rel="external"><em>Poison —— Martin Garrix</em></a></p>
+<div class="aplayer" data-id="36103134" data-server="netease" data-type="song" data-loop="none"></div>
+<!-- 
+<audio src="./audio/Poison.mp3" controls="controls">
+    哭泣 :-( ，你的垃圾浏览器不支持音频播放。
+-->
+<p>  🎧 <a href="http://music.163.com/#/song?id=28263911" target="_blank" rel="external"><em>Five Hours —— Deorro</em></a></p>
+<div class="aplayer" data-id="28263911" data-server="netease" data-type="song" data-loop="none"></div>
+<!-- 
+<audio src="./audio/Five Hours.mp3" controls="controls">
+    哭泣 :-( ，你的垃圾浏览器不支持音频播放。
+</audio>
+-->
+<p>  <strong>Future House</strong>，起初（2010年中期）起源于英国派的deep house风格，特点是在类似deep house那种慢速电音中，又有着金属电子，金属碰撞以及低音贝斯的声音。Future House风格的音乐在各种场合都不会带来很多违和感，而且很容易吸引捕捉人们的听力，最具代表性的一首就是哪怕你不了解电音也会知道的Alan Walker代表作——<a href="http://music.163.com/#/song?id=29947420" target="_blank" rel="external">Fade</a>，很多新生电音爱好者也是因为这首音乐开始入坑电音，并慢慢中毒。另外推荐两首我比较喜欢的：</p>
+<p>  🎧 <a href="http://music.163.com/#/song?id=427542048" target="_blank" rel="external"><em>Future Is Now —— Madison Mars</em></a></p>
+<div class="aplayer" data-id="427542048" data-server="netease" data-type="song" data-loop="none"></div>
+<!-- 
+<audio src="./audio/Future Is Now.mp3" controls="controls">
+    哭泣 :-( ，你的垃圾浏览器不支持音频播放。
+</audio>
+-->
+<p>  🎧 <a href="http://music.163.com/#/song?id=447281367" target="_blank" rel="external"><em>Safe &amp; Sound —— Different Heaven</em></a></p>
+<div class="aplayer" data-id="447281367" data-server="netease" data-type="song" data-loop="none">
+</div>
+<!-- 
+<audio src="./audio/Safe & Sound.mp3" controls="controls">
+    哭泣 :-( ，你的垃圾浏览器不支持音频播放。
+-->
+<p>  除了上述几类我个人比较熟悉也比较喜欢的House风格电音，庞大的House风格还有诸如<strong>Acid House</strong>、<strong>Tropical House</strong>、<strong>Hip House</strong>等等风格类型，在此就不一一赘述了。对House风格感兴趣的话，更多的了解推荐参考来自<a href="https://zhuanlan.zhihu.com/p/22008058" target="_blank" rel="external">知乎</a>的一篇。</p>
+<h3 id="trance"><strong>Trance</strong></h3>
+<p>  Trance一词，直译过来的话被译为恍惚、出神，而对于<strong>Trance</strong>风格的电音，一般称之为“迷幻舞曲”。Trance电音曲风形成之时也确实源于欧洲夜店尝试用音乐来模拟这样的状态。</p>
+<p>  产生于1990年代早期的Trance可以说是Techno和House一种分支，不过更偏向于旋律化，尤其是很长很长很长的Breakdown（联奏）中塞满复杂重复的优美旋律和及具特点的中音高潮，节拍速度在110-150bpm之间（大多数在125-145bpm）。随后的发展中Trance也相当地吸收了techno、house、pop、chill-out（甚至还有classical-古典音乐）等一些曲风的风格特点，形成了各类Trance曲风分支。</p>
+<p>  <strong>Psychedelic Trance</strong>或简称为<strong>Psy Trance</strong>，迷幻出神，利用合成器节奏构成的催眠式架构与复杂层次旋律的重复段落，节拍速度较快，在140-150bpm之间，95年左右非常流行（说实话现在还喜欢Psy Tranc的电音爱好者真的很硬核）。了解不多个人不做推荐。</p>
+<p>  <strong>Progressive Trance</strong>或简称<strong>Prog Trance</strong>，渐进出神，有着类似house的风格（比如鼓点），在旋律上突出渐进式变化，节拍速度在125-135bpm之间，Prog Trance曲风更加突出trance的中音优美，适合用作视频BGM，推荐两首个人比较喜欢的：</p>
+<p>  🎧 <a href="https://music.163.com/#/song?id=565820736" target="_blank" rel="external"><em>Ocean City - Eminence</em></a></p>
+<div class="aplayer" data-id="565820736" data-server="netease" data-type="song" data-loop="none"></div>
+<!--
+<audio src="./audio/Ocean City.mp3" controls="controls">
+    哭泣 :-( ，你的垃圾浏览器不支持音频播放。
+</audio>
+-->
+<p>  🎧 <a href="https://music.163.com/#/song?id=16336467" target="_blank" rel="external"><em>Vice Versa - ATB / Armin van Buuren</em></a></p>
+<div class="aplayer" data-id="16336467" data-server="netease" data-type="song" data-loop="none"></div>
+<p>  <strong>Hard Trance</strong>，硬派出神，特点在明显强劲坚硬的鼓击、共振的bass。回响集中在鼓点上，并且旋律较快，节拍在135-150bmp之间。接触较少不做推荐。</p>
+<p>  除了上述Trance派别，和House一样Trance还有很多派别比如<strong>Acid Trance</strong>、<strong>Tech Trance</strong>和<strong>Uplifting Trance</strong>，不做过多介绍。如果你喜欢Trance的话非常向你推荐<strong>NWYR(W&amp;W)<strong>和</strong>Armin van Buuren</strong>，Armin对电子音乐的发展也是做出了极大贡献，并且创立了属于自己的厂牌<strong>Armada Music</strong>，独家放送<em>A State Of Trance</em>深受Trance爱好者喜爱。</p>
+<h3 id="electro"><strong>Electro</strong></h3>
+<p>  回忆一下上个世纪超级马里奥的背景音乐，电脑合成的电子声音组成了一串有趣的BGM。大量合成音的运用可以说是<strong>Electro</strong>音乐的最大特点。</p>
+<p>  20世纪70年代，disco音乐逐渐衰落，音乐制作人们开始尝试新的音乐风格和音乐制作方式。80年代，Roland公司推出了一款名为<strong>TR-808 Rhythm Composer</strong>（下图）的电子音乐设备，与传统的电子音乐设备不同，808直接采用了模拟合成的方式发声，而非事先录入声音样本的模式。然而在电子音乐尚未流行时，808因其不切实际的声音模拟受到音乐制作人的批评，并且成为了商业上的失败品。但也因此大量808转入二手市场，并且因为其价格低廉、上手简单、可编程节奏以及极具风格的音色，受到了地下音乐制作者的青睐。紧接着808开始在音乐节发挥了它极具影响力的作用，而模拟合成的发声方式，逐渐被音乐制作人们接受，并且在日后的嘻哈、流行和电子音乐中开始占据一定地位。</p>
+<p><img src="./img/808.jpg" alt="Roland TR-808"></p>
+<p>  <strong>Electro</strong>风格的电音可以说将模拟合成音运用到了一种非常偏执的地步，从旋律到鼓点，从主调到伴奏。不同于House和Trance这种4/4规律节拍的曲子，Electro属于典型的BreakBeat（碎拍）曲风，整体鼓点变化和旋律变化非常明显。</p>
+<p>  毫不掩盖地说，我本人十分喜欢打电动玩电子游戏，所以对于Electro类电音的喜爱程度要远高于其他类别。当然，ELecrto必然适合在打电子游戏前调动一下气氛，也非常适合跑步运动时听，推荐几首我个人比较喜欢的：</p>
+<p>  🎧 <a href="https://music.163.com/#/song?id=565829870" target="_blank" rel="external"><em>New Game —— Nitro Fun</em></a></p>
+<div class="aplayer" data-id="565829870" data-server="netease" data-type="song" data-loop="none"></div>
+<!--
+<audio src="./audio/New Game.mp3" controls="controls">
+    哭泣 :-( ，你的垃圾浏览器不支持音频播放。
+</audio>
+-->
+<p>  🎧 <a href="https://music.163.com/#/song?id=414118654" target="_blank" rel="external"><em>Checkpoint —— Nitro Fun/Hyper Potions</em></a></p>
+<div class="aplayer" data-id="414118654" data-server="netease" data-type="song" data-loop="none"></div>
+<!--
+<audio src="./audio/Checkpoint.mp3" controls="controls">
+    哭泣 :-( ，你的垃圾浏览器不支持音频播放。
+</audio>
+-->
+<p>  🎧 <a href="https://music.163.com/#/song?id=31997589" target="_blank" rel="external"><em>Disconnected —— Pegboard Nerds</em></a></p>
+<div class="aplayer" data-id="31997589" data-server="netease" data-type="song" data-loop="none"></div>
+<!--
+<audio src="./audio/Disconnected.mp3" controls="controls">
+    哭泣 :-( ，你的垃圾浏览器不支持音频播放。
+</audio>
+-->
+<p>  🎧 <a href="https://music.163.com/#/song?id=415792678" target="_blank" rel="external"><em>Showdown —— F.O.O.L</em></a></p>
+<div class="aplayer" data-id="415792678" data-server="netease" data-type="song" data-loop="none"></div>
+<!--
+<audio src="./audio/Showdown.mp3" controls="controls">
+    哭泣 :-( ，你的垃圾浏览器不支持音频播放。
+</audio>
+-->
+<p>  🎧 <a href="https://music.163.com/#/song?id=36357910" target="_blank" rel="external"><em>Need You —— F.O.O.L</em></a></p>
+<div class="aplayer" data-id="36357910" data-server="netease" data-type="song" data-loop="none"></div>
+<!--
+<audio src="./audio/Need You.mp3" controls="controls">
+    哭泣 :-( ，你的垃圾浏览器不支持音频播放。
+</audio>
+-->
+<p>  🎧 <a href="https://music.163.com/#/song?id=27681425" target="_blank" rel="external"><em>Nerve —— Favright</em></a></p>
+<div class="aplayer" data-id="27681425" data-server="netease" data-type="song" data-loop="none"></div>
+<!--
+<audio src="./audio/Nerve.mp3" controls="controls">
+    哭泣 :-( ，你的垃圾浏览器不支持音频播放。
+</audio>
+-->
+<p>  猫厂Monstercat黄色封面均为Electro风格电音，可以说是集合了大量精品electro，喜欢electro的话个人非常推荐去听听看！</p>
+<h3 id="trap"><strong>Trap</strong></h3>
+<p>  <strong>Trap</strong>！陷阱！从街头嘻哈风格发展而来的Trap很好地继承了Hip-hop的“不良品质”——侵略性的旋律声音（以及歌词），描绘着美国南部街头风格的暴力和苛刻体验。Trap一词代表街头文化中的“死巷”，也是进行非法交易和暴力活动的小场所。特点为大量的踢鼓、808模拟低音鼓声以及充满层次的合成器声音，接拍速度在140BPM左右（但变化范围很大，从110-170BPM都有覆盖）。个人推荐几首，感受入侵：</p>
+<p>  🎧 <a href="https://music.163.com/#/song?id=37092824" target="_blank" rel="external"><em>Be Free - Aero Chord / Klaypex</em></a></p>
+<div class="aplayer" data-id="37092824" data-server="netease" data-type="song" data-loop="none"></div>
+<p>  🎧 <a href="https://music.163.com/#/song?id=412785957" target="_blank" rel="external"><em>Alone - Marshmello</em></a></p>
+<div class="aplayer" data-id="412785957" data-server="netease" data-type="song" data-loop="none"></div>
+<p>  🎧 <a href="https://music.163.com/#/song?id=488647718" target="_blank" rel="external"><em>Fury - Rogue</em></a></p>
+<div class="aplayer" data-id="488647718" data-server="netease" data-type="song" data-loop="none"></div>
+<p>  另外特别推荐江南皮革厂老板黄鹤专属个人EDM Trap单曲——<strong>王八蛋</strong>：</p>
+<p>  🎧 <a href="https://music.163.com/#/song?id=28953536" target="_blank" rel="external"><em>BADBOI - Pegboard Nerds</em></a></p>
+<div class="aplayer" data-id="28953536" data-server="netease" data-type="song" data-loop="none"></div>
+<blockquote>
+<p><em>2019.07.30 未完待续 后续D&amp;B Dubstep</em></p>
+</blockquote>
+
+                
+
+                <hr>
+                <!-- Pager -->
+                <ul class="pager">
+                    
+                        <li class="previous">
+                            <a href="/articles/minecraft_server_2/" data-toggle="tooltip" data-placement="top" title="Minecraft个人私服搭建指南（下）">&larr; Previous Post</a>
+                        </li>
+                    
+                    
+                        <li class="next">
+                            <a href="/articles/carl_jung_intro/" data-toggle="tooltip" data-placement="top" title="荣格——他的分析与神秘">Next Post &rarr;</a>
+                        </li>
+                    
+                </ul>
+
+                <!-- duoshuo Share start -->
+                
+                <!-- 多说 Share end-->
+
+                <!-- 多说评论框 start -->
+                
+                <!-- 多说评论框 end -->
+
+                <!-- disqus comment start -->
+                
+                <!-- disqus comment end -->
+            </div>
+            
+            <!-- Tabe of Content -->
+            <!-- Table of Contents -->
+
+    
+      <aside id="sidebar">
+        <div id="toc" class="toc-article">
+        <strong class="toc-title">Contents</strong>
+        
+          <ol class="toc-nav"><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#入门来了解一下"><span class="toc-nav-number">1.</span> <span class="toc-nav-text">入门？来了解一下</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#有关电音的一些东西"><span class="toc-nav-number">2.</span> <span class="toc-nav-text">有关电音的一些东西</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#edmoh-edm"><span class="toc-nav-number">2.1.</span> <span class="toc-nav-text">EDM？Oh EDM</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#mix-remix-xxx-mix"><span class="toc-nav-number">2.2.</span> <span class="toc-nav-text">Mix, Remix, xxx Mix</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#44-or-breakbeat"><span class="toc-nav-number">2.3.</span> <span class="toc-nav-text">4/4 OR Breakbeat?</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#bpm-amp-adsr-amp"><span class="toc-nav-number">2.4.</span> <span class="toc-nav-text">BPM & ADSR & ……</span></a></li></ol></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#不得不说的电音风格"><span class="toc-nav-number">3.</span> <span class="toc-nav-text">不得不说的电音风格</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#house"><span class="toc-nav-number">3.1.</span> <span class="toc-nav-text">House</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#trance"><span class="toc-nav-number">3.2.</span> <span class="toc-nav-text">Trance</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#electro"><span class="toc-nav-number">3.3.</span> <span class="toc-nav-text">Electro</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#trap"><span class="toc-nav-number">3.4.</span> <span class="toc-nav-text">Trap</span></a></li></ol></li></ol>
+        
+        </div>
+      </aside>
+    
+
+                
+            <!-- Sidebar Container -->
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+                <!-- Featured Tags -->
+                
+
+                <!-- Friends Blog -->
+                <!--
+                
+                <hr>
+                <h5>FRIENDS</h5>
+                <ul class="list-inline">
+
+                    
+                        <li><a href="http://efly.nenu.edu.cn" target="_blank">Efly Studio</a></li>
+                    
+                        <li><a href="https://oxygenmood.github.io" target="_blank">OxygenMood</a></li>
+                    
+                </ul>
+                
+                -->
+
+            </div>
+        </div>
+    </div>
+</article>
+
+
+
+
+
+
+
+<!-- async load function -->
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+<!-- anchor-js, Doc:http://bryanbraun.github.io/anchorjs/ -->
+<script>
+    async("https://cdn.bootcss.com/anchor-js/1.1.1/anchor.min.js",function(){
+        anchors.options = {
+          visible: 'hover',
+          placement: 'left',
+          icon: 'ψ'
+        };
+        anchors.add().remove('.intro-header h1').remove('.subheading').remove('.sidebar-container h5');
+    })
+</script>
+<style>
+    /* place left on bigger screen */
+    @media all and (min-width: 800px) {
+        .anchorjs-link{
+            position: absolute;
+            left: -0.75em;
+            font-size: 1.1em;
+            margin-top : -0.1em;
+        }
+    }
+</style>
+
+
+
+    <!-- Footer -->
+    <!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+
+                
+
+                
+                    <li>
+                        <a target="_blank" href="https://jianshu.com/u/00a615eea12f">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa  fa-stack-1x fa-inverse">简</i>
+                            </span>
+                        </a>
+                    </li>
+                
+
+                
+                    <li>
+                        <a target="_blank"  href="https://github.com/amvoidhub">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                
+
+                
+                    <li>
+                        <a target="_blank"  href="https://www.linkedin.com/in/amvoidin">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                
+
+                
+                    <li>
+                        <a target="_blank" href="https://www.zhihu.com/people/amovia">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa  fa-stack-1x fa-inverse">知</i>
+                            </span>
+                        </a>
+                    </li>
+                
+
+                
+                    <li>
+                        <a target="_blank" href="http://weibo.com/amovia">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-weibo fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                
+
+                
+
+                
+
+                
+                    <li>
+                        <a target="_blank" href="http://steamcommunity.com/profiles/76561198317707147">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-steam fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                
+
+                </ul>
+                <p class="copyright text-muted">
+                    Copyright &copy; 喵哼魚。 2019 
+                    <br>
+                    Theme by <a href="http://huangxuan.me">Hux</a> 
+                    <span style="display: inline-block; margin: 0 5px;">
+                        <i class="fa fa-heart"></i>
+                    </span> 
+                    <!--
+                    re-Ported by <a href="http://beantech.org">BeanTech</a> | 
+                    <iframe
+                        style="margin-left: 2px; margin-bottom:-5px;"
+                        frameborder="0" scrolling="0" width="91px" height="20px"
+                        src="https://ghbtns.com/github-btn.html?user=YenYuHsuan&repo=hexo-theme-beantech&type=star&count=true" >
+                    </iframe>
+                    -->
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- jQuery -->
+<script src="/js/jquery.min.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="/js/bootstrap.min.js"></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="/js/hux-blog.min.js"></script>
+
+
+<!-- async load function -->
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+<!-- 
+     Because of the native support for backtick-style fenced code blocks 
+     right within the Markdown is landed in Github Pages, 
+     From V1.6, There is no need for Highlight.js, 
+     so Huxblog drops it officially.
+
+     - https://github.com/blog/2100-github-pages-now-faster-and-simpler-with-jekyll-3-0  
+     - https://help.github.com/articles/creating-and-highlighting-code-blocks/    
+-->
+<!--
+    <script>
+        async("http://cdn.bootcss.com/highlight.js/8.6/highlight.min.js", function(){
+            hljs.initHighlightingOnLoad();
+        })
+    </script>
+    <link href="http://cdn.bootcss.com/highlight.js/8.6/styles/github.min.css" rel="stylesheet">
+-->
+
+
+<!-- jquery.tagcloud.js -->
+<script>
+    // only load tagcloud.js in tag.html
+    if($('#tag_cloud').length !== 0){
+        async("http://oxygenmode.me/js/jquery.tagcloud.js",function(){
+            $.fn.tagcloud.defaults = {
+                //size: {start: 1, end: 1, unit: 'em'},
+                color: {start: '#bbbbee', end: '#0085a1'},
+            };
+            $('#tag_cloud a').tagcloud();
+        })
+    }
+</script>
+
+<!--fastClick.js -->
+<script>
+    async("https://cdn.bootcss.com/fastclick/1.0.6/fastclick.min.js", function(){
+        var $nav = document.querySelector("nav");
+        if($nav) FastClick.attach($nav);
+    })
+</script>
+
+
+<!-- Google Analytics -->
+
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-123024319-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-123024319-1');
+</script>
+
+
+
+<!-- Baidu Tongji -->
+
+<script>
+    // dynamic User by Hux
+    var _baId = 'f42837ef82147164abeb122e5ac5082f';
+
+    // Originial
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "//hm.baidu.com/hm.js?" + _baId;
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+
+
+
+
+
+
+	<a id="rocket" href="#top" class=""></a>
+	<script type="text/javascript" src="/js/totop.js?v=1.0.0" async=""></script>
+    <script type="text/javascript" src="/js/toc.js?v=1.0.0" async=""></script>
+<!-- Image to hack wechat -->
+<!--<img src="http://oxygenmode.me/img/icon_wechat.png" width="0" height="0" />-->
+<!-- Migrate from head to bottom, no longer block render and still work -->
+
+</body>
+
+</html>

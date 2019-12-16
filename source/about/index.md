@@ -3,7 +3,7 @@ layout: "about"
 title: "关于·About"
 tab: "关于"
 date: 2016-04-21 04:48:33
-description: "其实在这里你有很大可能会得不到任何我的有关信息 ;)"
+description: "其实在这里你有很大可能会，得不到任何我本人的有关信息 ;)"
 header-img: "img/header_img/about_bg.png"
 ---
 
@@ -19,15 +19,15 @@ header-img: "img/header_img/about_bg.png"
 
 ## void main( )
 
-&emsp;&emsp;不知道这里应该说“你还”还是“大家好”。
+&emsp;&emsp;不知道这里应该说“你好”还是“大家好”。
 
-&emsp;&emsp;我是**毛斯特珩洛夫斯宇**，一名冒牌技术向的本科在读大学生，伪极客。目前就读于东北师范大学的心理学专业（Psychology），莫名热衷于各种代码和命令符，喜欢交朋友和参与有趣的集体活动~~狼人杀~~。热情洋溢追求自由的射手座——虽然从专业角度还是批判这种星座观，对目前没有大起大落跌宕起伏的人生感到略有遗憾:-(，正在努力调整生活的旋律，希望能让它变得更加丰富多彩。
+&emsp;&emsp;我是**喵哼魚**，一名冒牌技术向的劣质开发者，伪极客。毕业于某师范大学心理学专业，目前正在某师范大学蹲实验室，莫名热衷于各种代码和命令符，喜欢交朋友和参与有趣的集体活动~~狼人杀~~。热情洋溢追求自由的射手座——虽然从专业角度还是批判这种星座观，对目前没有大起大落跌宕起伏的人生感到略有遗憾:-(，正在努力调整生活的旋律，希望能让它变得更加丰富多彩。
 
-&emsp;&emsp;骗你的，包括这一句。
+&emsp;&emsp;骗你的，emmmmm包括这一句。
 
 ----------
 
-### 毛斯特珩洛夫斯宇 <span style="font-size:18px;"> / Mao hengyu </span>
+### 喵哼魚 <span style="font-size:18px;"> / Mao hengyu </span>
 #### ~~梦想成为~~&ensp;魔导师、炼金术师、赏金猎人 <span style="font-size:16px;"> / Mage, Alchymist, Bounty Hunter</span>
 
 > &emsp;<i class="fa fa-weixin" aria-hidden="true"></i> &emsp; yo-xiaoyu
@@ -63,4 +63,4 @@ header-img: "img/header_img/about_bg.png"
 
 ----------
 
-&emsp;<i class="fa fa-file-text-o" aria-hidden="true"></i>&emsp;**想要了解更多**：点击下载我的<a href="/files/about_me.txt" download="关于我">个人简历</a> (试验用)
+&emsp;<i class="fa fa-file-text-o" aria-hidden="true"></i>&emsp;**想要了解更多**：点击下载我的<a href="/files/about_me.txt" download="关于我">个人简历</a> (blank_试验用)
