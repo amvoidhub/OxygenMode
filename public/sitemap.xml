@@ -2,16 +2,30 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://oxygenmode.me/about/index.html</loc>
+    <loc>http://oxygenmode.me/articles/westworld-ots/</loc>
     
-    <lastmod>2019-11-16T00:30:47.043Z</lastmod>
+    <lastmod>2020-03-04T03:26:49.487Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://oxygenmode.me/articles/edm_intro/</loc>
     
-    <lastmod>2019-11-05T03:01:07.749Z</lastmod>
+    <lastmod>2020-03-02T15:23:11.975Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://oxygenmode.me/articles/carl_jung_intro/</loc>
+    
+    <lastmod>2019-12-16T09:25:10.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://oxygenmode.me/about/index.html</loc>
+    
+    <lastmod>2019-11-16T00:30:47.000Z</lastmod>
     
   </url>
   
@@ -26,13 +40,6 @@
     <loc>http://oxygenmode.me/articles/readbook_vol_2/</loc>
     
     <lastmod>2019-01-09T15:24:24.957Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://oxygenmode.me/articles/carl_jung_intro/</loc>
-    
-    <lastmod>2018-09-01T05:14:37.533Z</lastmod>
     
   </url>
   

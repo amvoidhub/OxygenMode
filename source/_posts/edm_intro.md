@@ -7,6 +7,7 @@ subtitle: 这是一篇完全不负责任的不完全电音入门指南，如果�
 header-img: ./img/Demo.jpg
 tags:
 - 电音
+- 音乐
 categories:
 - 电音
 comments: true
@@ -294,5 +295,9 @@ aplayer: true
 &emsp;&emsp;🎧&emsp;[*BADBOI - Pegboard Nerds*](https://music.163.com/#/song?id=28953536)
 
 <div class="aplayer" data-id="28953536" data-server="netease" data-type="song" data-loop="none"></div>
+
+### D&B
+
+&emsp;&emsp;Drum and Bass，贝斯鼓打。
 
 >*2019.07.30 未完待续 后续D&B Dubstep*
