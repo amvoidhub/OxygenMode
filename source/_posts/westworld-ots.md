@@ -1,6 +1,6 @@
 ---
 title: 西部世界中的魔改OTS
-tab: 西部世界
+tab: 西部世界OTS
 catalog: true
 date: 2020-03-03 23:36:31
 subtitle: 在西部世界第三季开播之前回顾一下这部神剧中的魔改配乐，以及期待最终极不会烂尾（话说烂尾不是美剧的传统吗？
@@ -34,12 +34,14 @@ aplayer: true
 &emsp;&emsp;早在西部世界这部剧之前，影视行业的配乐OTS基本就是将原声歌曲放入声轨，很少有什么新花样（也许有，但我不了解）。充其量是一些主旋律的变奏或者升降调，再或者是改变乐器风格的融合乐。而在西部世界的OTS配乐中，除了应有的原声音乐，还有写非常巧妙的魔改音乐，既不失歌曲本身的旋律，有恰如其分地符合西部世界的气氛设定。
 
 ### Black Hole Sun (Origin: Soundgarden)
-&emsp;&emsp;Soundgarden，我猜对于现代音乐迷来说也许是个非常陌生的名字，哪怕你是个摇滚迷。这个诞生于1984年的西雅图的乐队，成为早期西雅图之声-垃圾摇滚的第一批代表乐队。在上个世纪，随着大批音乐人入驻摇滚乐坛，摇滚音乐的蓬勃背后仅剩苍白和空洞，朋克与重金属似乎成为了抵抗这种繁荣假象最后的阵地，垃圾摇滚便随之孕育而生。Soundgarden更是成为了垃圾摇滚的早期主力，这首Black Hole Sun虽然是乐队第四专辑的一首先行单曲，却势如破竹获得1995年格莱美最佳硬摇滚演出奖项，其音乐录影带成为了MTV的热播，并在1994年获得MTV的最佳金属/硬式摇滚影片奖及在1995年获得另类音乐视频的克里欧奖。
-&emsp;&emsp;Black Hole Sun这首歌曲整体旋律，恰如一种迷失的感觉，就像一颗恒星最终坍缩成黑洞，将一切都迷失在其中。阿贾通过对这首歌主旋律的改编，以钢琴演奏出初入花园，来到西部世界中的游客那份迷失感。走进最初的旅馆，等待故事的发生，或者自己去寻找故事。
+&emsp;&emsp;Soundgarden，我猜对于现代音乐迷来说也许是个非常陌生的名字，哪怕你是个摇滚迷。这个诞生于1984年西雅图的乐队，成为早期西雅图之声-垃圾摇滚的第一批代表乐队。在上个世纪，随着大批音乐人入驻摇滚乐坛，摇滚音乐的蓬勃背后仅剩苍白和空洞，朋克与重金属似乎成为了抵抗这种繁荣假象最后的阵地，垃圾摇滚便随之孕育而生。Soundgarden更是成为了垃圾摇滚的早期主力，这首Black Hole Sun虽然是乐队第四专辑的一首先行单曲，却势如破竹获得1995年格莱美最佳硬摇滚演出奖项，其音乐录影带成为了MTV的热播，并在1994年获得MTV的最佳金属/硬式摇滚影片奖及在1995年获得另类音乐视频的克里欧奖。
+&emsp;&emsp;Black Hole Sun这首歌曲整体旋律，恰如一种迷失的感觉，就像一颗恒星最终坍缩成黑洞，将一切都迷失在其中。阿贾通过对这首歌主旋律的改编，以钢琴演奏出初入公园，来到西部世界中游客们那份迷失感。走进最初的旅馆，等待故事的发生，或者自己去寻找故事。
 
 <div class="aplayer" data-id="004PQljx1ObDHx" data-server="tencent" data-type="song" data-loop="none"></div>
 </br>
 <div class="aplayer" data-id="000dohKZ44L6YH" data-server="tencent" data-type="song" data-loop="none"></div>
+
+</br>
 
 ### Paint It Black (Origin: The Rolling Stones)
 &emsp;&emsp;The Rolling Stones 滚石乐队，一帮摇滚乐坛的老不死，一个从上世纪60年代成立至今还有活跃的乐队，实在有太多传奇故事，好故事和坏故事，入选摇滚名人堂，与披头士争高低，乐队的分崩离析，队员的吸毒和自杀。滚石作为一个英国血统的摇滚乐队，在英国流行音乐和摇滚乐在北美爆红的“英国入侵”时期，算是先锋乐团。The Rolling Stones的音乐风格根基于布鲁斯蓝调，让他们的摇滚乐表现出更低的音线，也在节凑上更偏紧凑。
@@ -51,6 +53,8 @@ aplayer: true
 <div class="aplayer" data-id="000Flzqe0vspsj" data-server="tencent" data-type="song" data-loop="none"></div>
 </br>
 <div class="aplayer" data-id="002ZZfH30kUqwb" data-server="tencent" data-type="song" data-loop="none"></div>
+
+</br>
 
 ### No Surprise (Origin: Radiohead)
 &emsp;&emsp;刚开始整理本期歌单的时候我就发现，阿贾大概是电台司令的粉丝，在整部西部世界剧中，有太多基于电台司令原曲改编的音乐。
